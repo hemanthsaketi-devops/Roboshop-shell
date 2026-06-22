@@ -8,7 +8,7 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-MYSQL_HOST=mysql.daws93.online
+MYSQL_HOST=mysql.daws93s.online
 
 VALIDATE(){
    if [ $1 -ne 0 ]

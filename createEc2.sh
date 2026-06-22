@@ -7,7 +7,7 @@ hosted_zone_id="Z02671512D0FTHVVKN2M"
 for name in ${instances[@]}; do
     if [ $name == "shipping" ] || [ $name == "mysql" ]
     then
-        instance_type="t3.medium"
+        instance_type="t3.small
     else
         instance_type="t3.micro"
     fi
