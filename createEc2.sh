@@ -7,9 +7,9 @@ hosted_zone_id="Z02671512D0FTHVVKN2M"
 for name in ${instances[@]}; do
     if [ $name == "shipping" ] || [ $name == "mysql" ]
     then
-        instance_type="t3.small
-    else
         instance_type="t3.micro"
+    else
+        instance_type="t3.small"
     fi
     echo "Creating instance for: $name with instance type: $instance_type"
     instance_id=$(aws ec2 run-instances --image-id ami-0220d79f3f480ecf5 --instance-type $instance_type --security-group-ids sg-0a6386a309b278a07 --subnet-id subnet-0686896146c8f390b --query 'Instances[0].InstanceId' --output text)
