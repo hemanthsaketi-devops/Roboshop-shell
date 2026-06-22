@@ -2,7 +2,7 @@
 
 # This script creates instances and updates Route 53 records in AWS
 
-instances=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "web")
+instance=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "web")
 domain_name="daws93.online"
 hosted_zone_id="Z0285612191R8C1OBNW9L"
 
