@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 # This script creates instances and updates Route 53 records in AWS
 
