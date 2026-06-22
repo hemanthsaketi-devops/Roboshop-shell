@@ -16,7 +16,7 @@ for name in "${instance[@]}"; do
     echo "Creating instance for: $name with instance type: $instance_type"
     
     # Run the instance and capture the instance ID
-    instance_id=$(aws ec2 run-instances --image-id ami-09c813fb71547fc4f --instance-type "$instance_type" --security-group-ids sg-0f4113cc012732160 --subnet-id subnet-0b58ea4566ed91360 --query 'Instances[0].InstanceId' --output text)
+    instance_id=$(aws ec2 run-instances --image-id ami-0220d79f3f480ecf5 --instance-type "$instance_type" --security-group-ids sg-0f4113cc012732160 --subnet-id subnet-0b58ea4566ed91360 --query 'Instances[0].InstanceId' --output text)
 
     # Debugging output to verify instance_id
     echo "Instance ID received: $instance_id"
