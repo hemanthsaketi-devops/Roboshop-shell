@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 # This script creates instances and updates Route 53 records in AWS
 
 instances=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "web")
